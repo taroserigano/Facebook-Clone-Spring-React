@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 
 function MyApp({ Component, pageProps }) {
   return (
+    // takes in session info here
     <SessionProvider session={pageProps.session}>
       <Provider store={store}>
         <Component {...pageProps} />
